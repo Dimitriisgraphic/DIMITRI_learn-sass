@@ -1,11 +1,61 @@
-body {
-  background-color: blue;
-  font-family: futura;
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400,800'); /* ---------------reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-div{
-  background-color: #c0ffee;
-  padding:30px;
-  margin:300px;
-  text-align: center;
+html {
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: lato;
+  background-image: url("../images/298142.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .content {
+    width: 35vw;
+    height: auto;
+    background-color: rgba(18, 17, 19, 0.8);
+    padding: 3vh 3vw;
+    text-align: left;
+    > p {
+      font-size: 1.5em;
+      span {
+        &:first-child {
+          color: #E4E6C3;
+          font-size: 2.2em;
+          display: inline-block;
+          font-family: annie use your telescope;
+          padding-bottom: 2vh;
+        }
+        &:nth-child(2) {
+          color: #F7F7F2;
+          font-size: 0.8em;
+          font-weight: light;
+          line-height: 2em;
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
