@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:200,400,800'); /* ---------------reset */
+/* ---------------reset */
 
 * {
   padding: 0;
@@ -20,18 +20,18 @@ a {
   text-decoration: none;
 }
 
-body {
+body{
   font-family: lato;
   background-image: url("../images/298142.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex_center();
   height: 100vh;
+  }
   .content {
     width: 35vw;
     height: auto;
@@ -43,19 +43,31 @@ body {
       span {
         &:first-child {
           color: #E4E6C3;
-          font-size: 2.2em;
+          font-size: 1.5em;
           display: inline-block;
-          font-family: annie use your telescope;
+          font-weight: 800;
           padding-bottom: 2vh;
         }
-        &:nth-child(2) {
+          &:nth-child(2) {
           color: #F7F7F2;
           font-size: 0.8em;
-          font-weight: light;
-          line-height: 2em;
+          font-weight: 200;
+          line-height: 1.5em;
           display: inline-block;
         }
       }
     }
+  }
+
+  .vs {
+    > p {
+      font-size: 22em;
+      span {
+
+          color: #E4E6C3;
+          display: inline-block;
+          font-weight: 800;
+          margin:4vh;
+        }
   }
 }

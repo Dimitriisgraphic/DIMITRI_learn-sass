@@ -1,0 +1,19 @@
+/*   @include flex_center();  */
+@mixin flex_center() {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*   @include flex_row();  */
+@mixin flex_row() {
+  display:flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+/*   @include flex_column();  */
+@mixin flex_column() {
+  display:flex;
+  flex-direction: column;
+}
