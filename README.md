@@ -19,10 +19,6 @@ __il suffit de faire ceci la première fois, il n'y a pas besoin de le refaire l
 
 ## Lancement du serveur de dév
 ```bash
-cd ..
-cd Users\Choupette computer\Documents\PRO\ARIES_WEB_DESIGN\web\learn-sass
-cd Documents\PRO\ARIES_WEB_DESIGN\web\learn-sass
-
 npm run serve
 ```
 Cela va lancer un serveur de développement sur votre machine. Vous devriez voir quelque chose de similaire
@@ -33,6 +29,6 @@ Vous pouvez maintenant lancer l'url `http://localhost:8080` (ou similaire) et vo
 
 ## Modifier le code
 Une fois que le serveur est lancé, vous pouvez modifier le contenu du fichier public/index.html
-ou src/assets/app.scss et la page se rechargera toute seule.
+ou src/assets/app.scss et la page se rechargera toute seule. 
 
 Si cela ne marche pas rafraîchissez la page dans le navigateur ou relancez entièrement le serveur.
