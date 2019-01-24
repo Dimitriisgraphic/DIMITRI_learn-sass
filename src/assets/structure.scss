@@ -22,12 +22,28 @@ a {
 
 body{
   font-family: lato;
-  background-image: url("../images/298142.jpg");
+  background-image: url("../images/maquette_dimitri_landingpage.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: scroll;
+
 }
 
 
+
+.content h1 {
+  display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+/*
 .wrapper {
   @include flex_center();
   height: 100vh;
@@ -71,3 +87,4 @@ body{
         }
   }
 }
+*/
