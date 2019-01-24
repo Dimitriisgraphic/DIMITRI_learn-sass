@@ -21,12 +21,16 @@ a {
 }
 
 body{
+  overflow: scroll;
+}
+
+.background {
   font-family: lato;
   background-image: url("../images/maquette_dimitri_landingpage.png");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: scroll;
-
+  width:100vw;
+  height: 250vh;
 }
 
 
