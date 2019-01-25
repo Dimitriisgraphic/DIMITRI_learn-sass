@@ -21,30 +21,139 @@ a {
 }
 
 body{
-  overflow: scroll;
+  font-family: 'Raleway', sans-serif;
 }
 
-.background {
+/* -----------------------------------------------------------header */
+header{
+
+}
+
+.topbar {
+  height: 10vh;
+  width:100vw;
+  background-color: rgba(86, 86, 96, 0.1);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  position:absolute;
+  z-index: 500;
+
+  .blocklogo > a {
+    display:inline-block;
+    color:white;
+
+    span {
+        margin:0 2vw;
+        font-size: 0.8em;
+    }
+  }
+}
+
+.logo_topbar{
+  height: 3vh;
+}
+
+.topbar ul {
+  display: flex;
+}
+
+.icon_socialnetwork{
+  height: 2vh;
+  width:auto;
+  margin:0 2vw;
+}
+
+
+.topbar_background {
   font-family: lato;
-  background-image: url("../images/maquette_dimitri_landingpage.png");
+  background-image: url("../images/kairossketch.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 30vh;
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar_background h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: auto;
+  color:white;
+  font-size: 3em;
+  display:inline-block;
+  margin-top: 12vh;
+}
+
+.topbar_background:after{
+  content:"";
+  display: block;
+  background-image: url("../images/background_separator.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   width:100vw;
-  height: 250vh;
+  height: 30vh;
+  position:absolute;
+  margin-top: 25vh;
 }
 
+/* -----------------------------------------------------------part_one */
+
+.part_one {
+  display:flex;
+  >*{
+    padding:0 10vw;
+  }
+  }
+
+.part_one--texts{
+  flex:1;
+  margin-top: 10vh;
+  color:#565660;
+    .article_title{
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color:#d2985e
+    }
+    .article_watchname{
+      font-size: 1em;
+      margin-top: 3vh;
+      color:#565660;
+
+      }
+    .article_text{
+      font-size: 0.8em;
+      margin-top: 2vh;
+      color:#565660;
+      }
+    }
 
 
-.content h1 {
-  display: inline-block;
 
+.part_one--pictures{
+  flex:1;
+  .picture-silver_1{
+    height: 30vh;
+    width: auto;
+  }
+  .picture-gold{
+    height: 40vh;
+    width: auto;
+  }
 }
 
-
-
-
-
-
+.call_action {
+  height: 5vh;
+  width: 10vw;
+  border: solid 1px;
+  border-radius: 2px 2px;
+  border-color: #565660;
+  text-align: center;
+}
 
 
 /*
