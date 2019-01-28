@@ -26,7 +26,7 @@ body{
 
 /* -----------------------------------------------------------header */
 header{
-
+  position:relative;
 }
 
 .topbar {
@@ -65,13 +65,12 @@ header{
   margin:0 2vw;
 }
 
-
 .topbar_background {
-  font-family: lato;
+
   background-image: url("../images/kairossketch.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 25vh;
   position:relative;
   display: flex;
   align-items: center;
@@ -89,86 +88,73 @@ header{
   margin-top: 12vh;
 }
 
-.topbar_background:after{
-  content:"";
-  display: block;
-  background-image: url("../images/background_separator.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width:100vw;
-  height: 30vh;
-  position:absolute;
-  margin-top: 25vh;
+.separator{
+    fill:white;
+    position:absolute;
+    bottom:0;
 }
 
 /* -----------------------------------------------------------part_one */
 
-.part_one {
+.part  {
+  position: relative;
   display:flex;
-  margin-top: 3vh;
+  margin: 3vh 0;
   >*{
     padding:2vh 0;
+
   }
   }
-  
-  .part_one:before{
-    content:"";
-    display: block;
-    background-image: url("../images/background_separator.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width:100vw;
-    height: 30vh;
-    position:absolute;
-    transform: rotate(180deg);
-    }
 
-
-.part_one--texts>*{
+.part_one--texts >*{
   display:inline-block;
 }
 
-.part_one--texts{
+.part_one--texts, .part_two--technicalpart, .part_two--designpart{
   flex:1;
   color:#565660;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   padding-left: 12vw;
 
-
-
-
     .article_title{
-      font-size: 1.5em;
+      font-size: 1.7em;
       text-transform: uppercase;
-      color:#d2985e
+      color:#d2985e;
+
     }
     .article_watchname{
-      font-size: 1em;
+      font-size: 1.2em;
       margin-top: 3vh;
       color:#565660;
-
       }
     .article_text{
-      font-size: 0.8em;
+      font-size: 1em;
       margin-top: 2vh;
       color:#565660;
+      text-align: center;
+      padding:0 7vw;
+      line-height: 1.6em;
       }
     }
 
     .call_action {
       height: 5vh;
-      width: 7vw;
+      width: 150px;
       border: solid 1px;
       border-radius: 3vh 3vh;
       border-color: #d2985e;
-      color:#d2985e;
+      color:white;
+      background-color:#d2985e;
       text-align: center;
       line-height: 5vh;
       justify-content:center;
-      margin-top: 2vh;
+      margin-top: 4vh;
+      box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+      font-size: 1.2em;
 
     }
 
@@ -187,23 +173,128 @@ header{
     width: auto;
   }
 }
-/* -----------------------------------------------------------part_one */
+
+/* -----------------------------------------------------------part_two */
   .part_two{
-    background-color: black;
-    height: 25vh;
+    height: auto;
     width: 100vw;
-  }
-  .part_one:before{
-    content:"";
-    display: block;
-    background-image: url("../images/background_separator.png");
+    background-image: url("../images/kairossketch.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width:100vw;
-    height: 30vh;
+    background-size: cover;
+    position: relative;
+}
+
+  .separator_bottom {
+    fill:white;
     position:absolute;
+    top:0;
     transform: rotate(180deg);
+    padding:0 0;
+    z-index: 5000;
+        }
+
+  .part_two--filter {
+      padding-top: 5vh;
+
     }
+
+.part_two--filter{
+    background-color:rgba(0,0,0,0.75);
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+
+.content_flex {
+  display: flex;
+  padding: 5vh 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.part_two--technicalpart---picture {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12vw;
+  .picture-silver_1{
+    height: 40vh;
+    width: auto;
+  }
+}
+
+.part_two--technicalpart {
+  padding-right: 12vw;
+    }
+
+.part_two--technicalpart .article_text,.part_two--technicalpart .article_watchname, {
+  color:white;
+}
+
+.article_text span{
+  font-size: 0.7em;
+}
+/* -----------------------------------------------------------part_two technicalpart */
+
+.part_two--designpart {
+  padding-left: 12vw;
+    }
+
+.part_two--designpart .article_text,.part_two--designpart .article_watchname, {
+  color:white;
+    }
+
+.part_two--designpart---picture {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12vw;
+  .design{
+    height: 40vh;
+    width: auto;
+  }
+}
+/* -----------------------------------------------------------part_two designpart */
+
+
+
+.footersvg {
+  fill:rgba(255,255,255,1);
+  position: absolute;
+  bottom:0;
+  padding-bottom: 4vh;
+}
+
+footer{
+  height: 4vh;
+  background-color:rgba(255,255,255,1);
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .logo_footer{
+    height: 2vh;
+    width:auto;
+
+  }
+
+
+  /*
+
+
+
+
+/* -----------------------------------------------------------footer */
+
+
 
 /*
 .wrapper {
