@@ -52,7 +52,7 @@ header{
 }
 
 .logo_topbar{
-  height: 3vh;
+  height: 2vh;
 }
 
 .topbar ul {
@@ -93,8 +93,15 @@ header{
     position:absolute;
     bottom:0;
 }
+@media (max-width: 1200px){
+  .topbar_background h1 {
+    font-size: 2em;
+    display:inline-block;
+    margin-top: 12vh;
+  }
 
-/* -----------------------------------------------------------part_one */
+}
+/* ----------------------------------------------part_one */
 
 .part  {
   position: relative;
@@ -109,6 +116,9 @@ header{
 .part_one--texts >*{
   display:inline-block;
 }
+
+
+
 
 .part_one--texts, .part_two--technicalpart, .part_two--designpart{
   flex:1;
@@ -140,6 +150,12 @@ header{
       line-height: 1.6em;
       }
     }
+
+@media (max-width: 1200px){
+.part_one--texts, .part_two--technicalpart, .part_two--designpart{
+    padding:2vh;
+}
+}
 
     .call_action {
       height: 5vh;
@@ -174,7 +190,21 @@ header{
   }
 }
 
-/* -----------------------------------------------------------part_two */
+@media (max-width: 1200px){
+.part_one--pictures{
+  padding: 2vh;
+  .picture-silver_1{
+    height: 25vh;
+    width: auto;
+  }
+  .picture-gold{
+    height: 35vh;
+    width: auto;
+  }
+}
+}
+
+/* -------------------------------------------part_two */
   .part_two{
     height: auto;
     width: 100vw;
@@ -195,11 +225,10 @@ header{
 
   .part_two--filter {
       padding-top: 5vh;
-
     }
 
 .part_two--filter{
-    background-color:rgba(0,0,0,0.75);
+    background-color:rgba(0,0,0,0.85);
     height: 100%;
     width:100%;
     position: relative;
@@ -213,6 +242,12 @@ header{
   align-items: center;
 }
 
+@media (max-width: 1200px){
+.part, .content_flex {
+  flex-direction: row-reverse;
+  flex-flow: row wrap;
+}
+}
 
 .part_two--technicalpart---picture {
   flex:1;
@@ -220,14 +255,14 @@ header{
   justify-content: center;
   align-items: center;
   padding-left: 12vw;
-  .picture-silver_1{
+  .picture-silver_2{
     height: 40vh;
     width: auto;
   }
 }
 
 .part_two--technicalpart {
-  padding-right: 12vw;
+  padding: 0 12vw 0 0;
     }
 
 .part_two--technicalpart .article_text,.part_two--technicalpart .article_watchname, {
@@ -258,6 +293,18 @@ header{
     width: auto;
   }
 }
+
+@media (max-width: 1200px){
+.part_two--technicalpart---picture, .part_two--designpart---picture{
+  padding: 2vh;
+  }
+}
+
+@media (max-width: 1200px){
+.part_one--texts, .part_two--technicalpart, .part_two--designpart {
+  padding: 2vh;
+  }
+}
 /* -----------------------------------------------------------part_two designpart */
 
 
@@ -283,8 +330,11 @@ footer{
   .logo_footer{
     height: 2vh;
     width:auto;
-
   }
+
+
+
+
 
 
   /*
